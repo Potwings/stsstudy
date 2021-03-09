@@ -1,0 +1,11 @@
+package org.ygk.board.domain;
+
+import java.sql.Date;
+
+public class Board {
+
+	private Integer bno;
+	private String title,content,writer;
+	private Date regdate, updateDate;
+	
+}

@@ -1,0 +1,32 @@
+
+	<div class="insert">
+		<h1>insert</h1>
+	</div>
+
+
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">tno</th>
+				<th scope="col">Title</th>
+				<th scope="col">Complete</th>
+				<th scope="col">regdate</th>
+			</tr>
+		</thead>
+
+
+		<tbody>
+			<c:forEach items="${todos }" var="todo">
+				<tr>
+					<th scope="row">${todo.tno }</th>
+					<td>${todo.title }</td>
+					<td>${todo.complete }</td>
+					<td>${todo.regdate }</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+
+
+<%@include file="../include/footer.jsp"%>

@@ -1,0 +1,5 @@
+package org.ygk.common.config;
+
+public class ServletConfig {
+
+}

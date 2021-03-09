@@ -1,0 +1,11 @@
+package org.ygk.board.service;
+
+import java.util.List;
+
+import org.ygk.board.domain.Board;
+
+public interface BoardService {
+
+	List<Board> getList();
+	
+}

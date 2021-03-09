@@ -1,0 +1,11 @@
+package org.ygk.time.config;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@MapperScan(basePackages = "org.ygk.time.mapper")
+public class TimeConfig {
+	
+
+}

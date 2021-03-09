@@ -1,0 +1,8 @@
+package org.zerock.controller;
+
+import org.junit.runner.RunWith;
+
+@RunWith(springJ)
+public class Test {
+
+}

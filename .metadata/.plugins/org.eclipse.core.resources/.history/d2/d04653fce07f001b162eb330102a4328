@@ -1,0 +1,5 @@
+package org.ygk.time.config;
+
+public class TimeConfig {
+
+}

@@ -1,0 +1,12 @@
+package org.ygk.common;
+
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.ygk.common.config.CommonConfig;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = CommonConfig.class)
+public class SampleTests {
+
+}

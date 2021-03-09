@@ -1,0 +1,8 @@
+package org.ygk.board.mapper;
+
+public interface BoardMapper {
+
+	
+	List<Board> getlist();
+	
+}

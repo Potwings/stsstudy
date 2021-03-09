@@ -1,0 +1,11 @@
+package org.zerock.entity;
+
+import java.sql.Date;
+
+public class Todo {
+	private Integer tno;
+	private String title;
+	private boolean complete;
+	private Date regdate;
+
+}

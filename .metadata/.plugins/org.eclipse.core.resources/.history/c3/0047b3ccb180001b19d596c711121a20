@@ -1,0 +1,42 @@
+package org.ygk.board.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.ygk.board.domain.Board;
+import org.ygk.board.dto.BoardDTO;
+import org.ygk.board.mapper.BoardMapper;
+import org.ygk.common.dto.PageDTO;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
+import lombok.extern.log4j.Log4j;
+
+@Service
+@Log4j
+@RequiredArgsConstructor
+public class BoardServiceImple implements BoardService {
+
+	private final BoardMapper boardMapper;
+	
+	@Override
+	public List<BoardDTO> getList(PageDTO pageDTO) {
+
+		List<Board> volist = boardMapper.getlist(pageDTO.getSkip(), pageDTO.getPerSheet());
+
+		volist.forEach(board-> {
+			BoardDTO dto = toDTO(board);
+			
+			
+		});
+			
+		
+//		List<BoardDTO> dtolist = new ArrayList<>();
+//				
+//		volist.forEach(b -> dtolist.add(toDTO(b)));
+		
+		return null;
+	}
+
+}

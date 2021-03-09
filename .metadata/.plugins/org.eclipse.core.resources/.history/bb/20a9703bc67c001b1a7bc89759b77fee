@@ -1,0 +1,9 @@
+package org.zerock.entity;
+
+public class TodoDTO {
+
+	private Integer tno;
+	private String tile;
+	private boolean complete;
+	
+}

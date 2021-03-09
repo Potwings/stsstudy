@@ -1,0 +1,10 @@
+package org.ygk.board.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "org.ygk.board.service")
+public class BoardConfig {
+
+}

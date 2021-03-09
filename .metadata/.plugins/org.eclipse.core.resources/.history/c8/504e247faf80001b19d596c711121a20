@@ -1,0 +1,33 @@
+package org.ygk.board.service;
+
+import java.util.List;
+
+import org.ygk.board.domain.Board;
+import org.ygk.board.dto.BoardDTO;
+
+public interface BoardService {
+
+	List<BoardDTO> getList();
+	 
+	default Board toDomain(BoardDTO dto) {
+		
+		
+		return Board.builder()
+				.bno(dto.getBno())
+				.title(dto.getTitle())
+				.content(dto.getContent())
+				.writer(dto.getWriter())
+				.build();
+	}
+	
+	default BoardDTO toDTO(Board board) {
+		
+		return BoardDTO.builder()
+				.bno(board.getBno())
+				.title(board.getContent())
+				.content(board.getContent())
+				.writer(board.getWriter())
+				.build();
+	}
+	
+}

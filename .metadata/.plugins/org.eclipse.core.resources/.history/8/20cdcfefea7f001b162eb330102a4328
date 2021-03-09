@@ -1,0 +1,10 @@
+package org.ygk.board.dto;
+
+import java.sql.Date;
+
+public class BoardDTO {
+
+	private Integer bno;
+	private String title,content,writer;
+	private Date regdate, updateDate;
+}

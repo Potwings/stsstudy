@@ -1,0 +1,12 @@
+package org.zerock.mapper;
+
+import org.apache.ibatis.annotations.Insert;
+
+public interface TodoMapper {
+
+	@Insert("insert into tbl_todo2 ")
+	void insert() {
+		
+	}
+	
+}

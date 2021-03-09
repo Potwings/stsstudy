@@ -1,0 +1,8 @@
+package org.ygk.common.dto;
+
+
+public class PageDTO {
+
+	
+	
+}

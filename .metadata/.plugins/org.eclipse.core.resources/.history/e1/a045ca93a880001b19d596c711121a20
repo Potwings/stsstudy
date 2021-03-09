@@ -1,0 +1,5 @@
+package org.ygk.board.dto;
+
+public class PageInfo {
+
+}

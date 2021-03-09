@@ -1,0 +1,59 @@
+package org.zerock.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.entity.Todo;
+import org.zerock.entity.TodoDTO;
+import org.zerock.mapper.TodoMapper;
+
+import lombok.extern.log4j.Log4j;
+
+@Controller
+@RequestMapping("/todo")
+@Log4j
+public class TodoController {
+
+	@Autowired
+	TodoMapper todoMapper;
+	
+	@GetMapping("/add")
+	public String add() {
+		log.info(todoMapper);
+		
+		log.info("GET--------------------------");
+		
+		return "todo/add";
+		
+	}
+	
+	@PostMapping("/add")
+	public String addPost(TodoDTO todoDTO) {
+		log.info(todoMapper);
+		log.info("POST---------------------");
+		
+		Todo todo = Todo.builder().title(todoDTO.getTitle()).complete(todoDTO.isComplete()).build();
+		
+		todoMapper.insert(todo);
+		
+		return "redirect:/todo/list";
+	}
+	
+	@GetMapping("/list")
+	public void list(Model model) {
+		log.info("list------------");
+	
+		List<Todo> todos = todoMapper.selectAll();
+		
+		model.addAttribute("todos", todos);
+		
+	}
+
+	
+	
+}

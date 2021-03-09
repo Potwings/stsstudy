@@ -1,0 +1,11 @@
+package org.ygk.board.mapper;
+
+import java.util.List;
+
+import org.ygk.board.domain.Board;
+
+public interface BoardMapper {
+
+	List<Board> getlist(PageDTO pageDTO);
+	
+}

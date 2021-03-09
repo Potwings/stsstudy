@@ -1,0 +1,27 @@
+package org.ygk.board.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.ygk.board.dto.BoardDTO;
+import org.ygk.board.mapper.BoardMapper;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
+
+@Service
+@Log
+@RequiredArgsConstructor
+public class BoardServiceImple implements BoardService {
+
+	private final BoardMapper boardMapper;
+	
+	@Override
+	public List<BoardDTO> getList() {
+
+		List<Board> newlist = boardMapper.getlist();
+		
+		return ;
+	}
+
+}

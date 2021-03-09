@@ -1,0 +1,25 @@
+
+<%@ include file="../includes/header.jsp"%>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">bno</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+      <th scope="col">Writer</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<%@ include file="../includes/footer.jsp"%>

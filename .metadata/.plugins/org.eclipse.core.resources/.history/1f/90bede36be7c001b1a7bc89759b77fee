@@ -1,0 +1,16 @@
+package org.zerock.entity;
+
+import java.sql.Date;
+
+import lombok.Data;
+
+@Data
+public class Todo {
+	
+	private Integer tno;
+	private String title;
+	private boolean complete;
+	private Date regdate;
+	
+
+}

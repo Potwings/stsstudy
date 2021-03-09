@@ -1,0 +1,6 @@
+package org.ygk.board.service;
+
+public interface BoardService {
+
+	List<Board> getList();
+}
